@@ -9,7 +9,7 @@ def deploy(){
 }
 def dependencies(String dependency_tool){
   try {
-      sh "${dependency_tool}  install"
+      sh "${dependency_tool} install"
   } catch(error){
       echo "WARNING: Couldn't setup dependencies!"
   }
